@@ -1,20 +1,23 @@
 import './App.css';
 import React from 'react';
 import {Navbar} from './components/navbar';
-import {BrowserRouter as Router,Routes, Route} from "react-router-dom";
-import Home from "./pages";
-import Posts from "./pages/posts";
-import Contact from "./pages/contact";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from "./pages/home/Home";
+import Posts from "./pages/posts/Posts";
+import Contact from "./pages/contact/Contact";
+import ErrorPage from "./pages/error/Erro";
+
 
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar/>
         <Routes>
-            <Route path="/" exact component={Home} />
-            <Route path="/posts"  component={Posts} />
-            <Route path="/contact"  component={Contact} />
+            <Route path="/" element={<Home/>} />
+            <Route path="/posts"  element={<Posts/>} />
+            <Route path="/contact"  element={<Contact/>} />
+            <Route path="/error"  errorElement={ErrorPage} />
         </Routes>
     </Router>
   );
