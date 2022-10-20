@@ -18,10 +18,34 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  background: #2d2d2d;
+  font-size: 1.5rem;
+    &:hover {   
+        background: #2d2d2d;
+        color: #fff;
+        transition: all 0.2s ease-in-out;
+    }
 
   &.active {
     color: #ea9d0a;
-    
+
+  }
+`
+export const NavLinkRockerBlog = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  background: #2d2d2d;
+    font-size: 2rem;
+    font-weight: bold;
+
+  &.active {
+    color: #ea9d0a;
+
   }
 `
 

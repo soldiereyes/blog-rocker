@@ -1,6 +1,18 @@
-*{
+* {
     font-family: Rubik, sans-serif;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    background: linear-gradient(45deg, rgba(241, 161, 10, 1) 0%, rgba(52, 35, 3, 1) 100%);
+    background-size: 400%;
+    animation: bg-animation 5s infinite alternate;
+
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
 }

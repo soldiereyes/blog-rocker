@@ -8,19 +8,18 @@ import Contact from "./pages/contact/Contact";
 import ErrorPage from "./pages/error/Erro";
 
 
-
 function App() {
-  return (
-    <Router>
-      <Navbar/>
-        <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/posts"  element={<Posts/>} />
-            <Route path="/contact"  element={<Contact/>} />
-            <Route path="/error"  errorElement={ErrorPage} />
-        </Routes>
-    </Router>
-  );
+    return (
+        <Router>
+            <Navbar/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/posts" element={<Posts/>}/>
+                <Route path="/contact" element={<Contact/>}/>
+                <Route path="/error" errorElement={ErrorPage}/>
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

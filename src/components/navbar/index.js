@@ -1,21 +1,21 @@
 import React from "react";
-import {Bars, Nav, NavLink, NavMenu} from "./Navbar";
+import {Bars, Nav, NavLink, NavLinkRockerBlog, NavMenu} from "./Navbar";
 
 export const Navbar = () => {
     return (
         <>
             <Nav>
-                <NavLink to="/">
+                <NavLinkRockerBlog to="/">
                     Rocker Blog
-                </NavLink>
+                </NavLinkRockerBlog>
                 <Bars />
                 <NavMenu>
-                    <NavLink to="/posts" activeStyle>
+                    <NavLink to="/posts" style={{fontWeight:"bold"}}>
                         Posts
                     </NavLink>
                 </NavMenu>
                 <NavMenu>
-                    <NavLink to="/contact" activeStyle>
+                    <NavLink to="/contact" style={{fontWeight:"bold"}}>
                         Contact
                     </NavLink>
                 </NavMenu>
