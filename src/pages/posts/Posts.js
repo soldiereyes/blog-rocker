@@ -8,7 +8,7 @@ const Posts = () => {
             <section style={postsStyles.sectionImageTitle}>
                 <div style={postsStyles.content}>
                     <div style={postsStyles.contentImage}>
-                        <img src={PhotoPost} alt="Photo" style={postsStyles.image}/>
+                        src={PhotoPost} alt="Photo" style={postsStyles.image}
                     </div>
 
                     <div style={postsStyles.contentText}>
@@ -19,7 +19,7 @@ const Posts = () => {
 
                 </div>
             </section>
-            <div style={postsStyles.mainText}>
+            <div style={postsStyles.mainTextContainer}>
                 <p style={postsStyles.mainText}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend ligula in nulla vulputate pharetra.
                     Proin condimentum, libero quis feugiat pharetra, ante arcu faucibus felis, vel elementum magna felis in libero.

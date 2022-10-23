@@ -82,7 +82,15 @@ export default {
         marginLeft: '15%',
         background: '#fff',
     },
+    mainTextContainer: {
+        display: 'flex',
+        background: '#fff',
+        marginLeft: '20%',
+        marginRight: '20%',
+        marginTop: '10rem'
+    },
     mainText: {
+        fontSize: '1.5rem',
         display: 'block',
         marginLeft: '0%',
         marginRight: '0%',

@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     background: linear-gradient(45deg, rgba(241, 161, 10, 1) 0%, rgba(52, 35, 3, 1) 100%);
-    background-size: 400%;
+    background-size: 500%;
     animation: bg-animation 5s infinite alternate;
 
 }
