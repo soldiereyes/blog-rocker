@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-anonymous-default-export
-export default {
+export default  {
     container1: {
         flex: 1,
         display: 'flex',
@@ -8,8 +8,7 @@ export default {
         justifyContent: 'center',
         background: '#fff',
         height: '20rem',
-        width: '120rem',
-        margin: 'auto',
+        width: '119.8rem',
         marginTop: '5%',
         marginBottom: '5%',
         position: 'relative'
@@ -22,7 +21,7 @@ export default {
         justifyContent: 'left',
         background: '#fff',
         height: '30rem',
-        width: '82.8rem',
+        width: '82.9rem',
         margin: 'auto',
         marginTop: '5%',
         marginBottom: '5%',
@@ -37,7 +36,7 @@ export default {
         justifyContent: 'center',
         background: '#fff',
         height: '20rem',
-        width: '120rem',
+        width: '119.8rem',
         margin: 'auto',
         marginTop: '5%',
         marginBottom: '5%',
@@ -50,7 +49,7 @@ export default {
         justifyContent: 'center',
         background: '#fff',
         height: '30rem',
-        width: '82.8rem',
+        width: '82.9rem',
         margin: 'auto',
         marginTop: '5%',
         marginBottom: '5%',
@@ -64,7 +63,7 @@ export default {
         justifyContent: 'center',
         background: '#fff',
         height: '20rem',
-        width: '120rem',
+        width: '119.8rem',
         margin: 'auto',
         marginTop: '5%',
         marginBottom: '5%',
@@ -77,7 +76,7 @@ export default {
         justifyContent: 'left',
         background: '#fff',
         height: '30rem',
-        width: '82.8rem',
+        width: '82.9rem',
         margin: 'auto',
         marginTop: '5%',
         marginBottom: '5%',
@@ -91,7 +90,7 @@ export default {
         justifyContent: 'center',
         background: '#fff',
         height: '20rem',
-        width: '120rem',
+        width: '119.8rem',
         margin: 'auto',
         marginTop: '5%',
         marginBottom: '5%',
@@ -111,7 +110,7 @@ export default {
         flexDirection: 'column',
         height: '100%',
         width: '50%',
-        padding: '0, 30px',
+        padding: '0, 0px',
         marginTop: '10rem',
     },
     sectionSmallCard2: {
@@ -121,7 +120,7 @@ export default {
         flexDirection: 'column',
         height: '100%',
         width: '70%',
-        padding: '0, 30px',
+        padding: '0, 0px',
         marginTop: '10rem',
     },
     contentImage: {
@@ -132,6 +131,7 @@ export default {
         background: '#fff',
     },
     image:{
+        display: 'flex',
         width: '100%',
         height: '100%',
         background: '#fff',
