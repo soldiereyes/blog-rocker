@@ -4,9 +4,7 @@ import {Navbar} from './components/navbar';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from "./pages/home/Home";
 import Posts from "./pages/posts/Posts";
-import Contact from "./pages/contact/Contact";
 import ErrorPage from "./pages/error/Erro";
-
 
 function App() {
     return (
@@ -15,11 +13,9 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/posts" element={<Posts/>}/>
-                <Route path="/contact" element={<Contact/>}/>
-                <Route path="/error" errorElement={ErrorPage}/>
+                <Route path="/error" errorElement={<ErrorPage/>}/>
             </Routes>
         </Router>
     );
 }
-
 export default App;
