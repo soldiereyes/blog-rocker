@@ -1,5 +1,6 @@
 import React from "react";
 import {Bars, Nav, NavLink, NavLinkRockerBlog, NavMenu} from "./Navbar";
+import ModalContact from "../modalContact";
 
 export const Navbar = () => {
     return (
@@ -10,12 +11,12 @@ export const Navbar = () => {
                 </NavLinkRockerBlog>
                 <Bars />
                 <NavMenu>
-                    <NavLink to="/posts" style={{fontWeight:"bold"}}>
+                    <NavLink to="/posts" >
                         Posts
                     </NavLink>
                 </NavMenu>
                 <NavMenu>
-                    <NavLink to="/contact" style={{fontWeight:"bold"}}>
+                    <NavLink to = '/contact'>
                         Contact
                     </NavLink>
                 </NavMenu>
