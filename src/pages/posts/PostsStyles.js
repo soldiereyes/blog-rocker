@@ -48,7 +48,6 @@ export default {
         marginRight: '100%',
         width: '100%',
     },
-
     cardTitle: {
         fontSize: '2.25rem',
         color: 'rgba(241, 161, 10, 1)',
@@ -59,8 +58,6 @@ export default {
         marginLeft: '15%',
         marginRight: '0%',
         background: '#fff',
-
-
     },
     data: {
         fontSize: '1.125',
