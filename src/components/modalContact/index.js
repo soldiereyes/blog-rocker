@@ -1,33 +1,29 @@
-import Modal from 'react-modal';
-import {useState} from "react";
+import React, {useState} from "react";
 
-function ModalContact() {
-    const [modalIsOpen, setModalIsOpen] = useState(true);
 
-    function openModal() {
-        setModalIsOpen(true);
-    }
-
-    function closeModal() {
-        setModalIsOpen(false);
-    }
+const ModalContact = ({closeModal}) => {
 
     return (
-        <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={closeModal}
-            contentLabel="Minimal Modal Example"
-        >
-            <h2>Minimal Modal</h2>
-            <div>I am a modal</div>
-            <form>
-                <input placeholder="Name"/>
-                <input placeholder="Email"/>
-                <button>Send</button>
-            </form>
-            <button onClick={closeModal}>close</button>
-        </Modal>
+            <div className='modal-background'>
+
+                <div className='modal-container'>
+
+                    <div className='title-close-btn'>
+                        <button onClick={() => closeModal(true)}> X</button>
+                    </div>
+
+                    <div className='title-modal'>
+                        <h1> Contact </h1>
+                    </div>
+
+                    <div className='body-modal'></div>
+
+                    <div className='footer-modal'>
+                        <button className='submit' onClick={() => closeModal(true)}> Submit</button>
+                    </div>
+
+                </div>
+            </div>
     );
 }
-
 export default ModalContact;

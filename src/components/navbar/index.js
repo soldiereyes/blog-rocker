@@ -1,26 +1,29 @@
-import React from "react";
-import {Bars, Nav, NavLink, NavLinkRockerBlog, NavMenu} from "./Navbar";
+import React, {useState} from "react";
+import {Bars, Button, Nav, NavLink, NavLinkRockerBlog, NavMenu} from "./Navbar";
 import ModalContact from "../modalContact";
 
 export const Navbar = () => {
+    const [openModal, setOpenModal] = useState(false);
+
     return (
-        <>
+        < >
             <Nav>
                 <NavLinkRockerBlog to="/">
                     Rocker Blog
                 </NavLinkRockerBlog>
-                <Bars />
+                <Bars/>
                 <NavMenu>
-                    <NavLink to="/posts" >
+                    <NavLink to="/posts">
                         Posts
                     </NavLink>
                 </NavMenu>
                 <NavMenu>
-                    <NavLink to = '/contact'>
-                        Contact
-                    </NavLink>
+                    <Button
+                        onClick={() => {setOpenModal(true)
+                    }}>Contact</Button>
                 </NavMenu>
             </Nav>
+            {openModal ? < ModalContact  closeModal={true} /> : null}
         </>
     );
 }
