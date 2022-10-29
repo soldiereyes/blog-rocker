@@ -1,29 +1,62 @@
-import React, {useState} from "react";
-
+import React from "react";
+import {
+    BodyModal,
+    ButtonClose,
+    FooterModal,
+    InputForm, 
+    InputFormPost,
+    LabelForm,
+    ModalBackground,
+    ModalContainer,
+    SubmitBtn,
+    TitleCloseBtn,
+    TitleModal
+} from "./Modal";
+import {MdSend} from "react-icons/md";
 
 const ModalContact = ({closeModal}) => {
 
     return (
-            <div className='modal-background'>
+        <ModalBackground>
+            <ModalContainer>
+                <TitleCloseBtn>
+                    <ButtonClose onClick={() => closeModal(false)}> X</ButtonClose>
+                </TitleCloseBtn>
+                <TitleModal>Contact</TitleModal>
+                <BodyModal>
+                    <form>
+                        <LabelForm>
+                            Name:
+                            <InputForm type="text"  />
+                        </LabelForm>
+                    </form>
+                    <form>
+                        <LabelForm>
+                            Email:
+                            <InputForm type="text"/>
+                        </LabelForm>
+                    </form>
+                    <form>
+                        <LabelForm>
+                            Phone:
+                            <InputForm  inputMode="tel" />
+                        </LabelForm>
+                    </form>
+                    <form>
+                        <LabelForm>
+                            Post:
+                            <InputFormPost type="text" name="name"/>
+                        </LabelForm>
+                    </form>
 
-                <div className='modal-container'>
-
-                    <div className='title-close-btn'>
-                        <button onClick={() => closeModal(true)}> X</button>
-                    </div>
-
-                    <div className='title-modal'>
-                        <h1> Contact </h1>
-                    </div>
-
-                    <div className='body-modal'></div>
-
-                    <div className='footer-modal'>
-                        <button className='submit' onClick={() => closeModal(true)}> Submit</button>
-                    </div>
-
-                </div>
-            </div>
+                </BodyModal>
+                <FooterModal>
+                    <SubmitBtn
+                        onClick={() => closeModal(false)}><MdSend/> Submit
+                    </SubmitBtn>
+                </FooterModal>
+            </ModalContainer>
+        </ModalBackground>
     );
 }
 export default ModalContact;

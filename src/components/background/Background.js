@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const Background = styled.div`
+  padding: 10px;
   font-family: Rubik, sans-serif;
   box-sizing: border-box;
   background: linear-gradient(45deg, rgba(241, 161, 10, 1) 0%, rgba(52, 35, 3, 1) 100%);

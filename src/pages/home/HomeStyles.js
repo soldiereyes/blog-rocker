@@ -11,7 +11,6 @@ export default  {
         width: '119.8rem',
         marginTop: '5%',
         marginBottom: '5%',
-        position: 'relative'
     },
     container2: {
         flex: 1,
@@ -26,7 +25,6 @@ export default  {
         marginTop: '5%',
         marginBottom: '5%',
         marginLeft: '31%',
-        position: 'relative'
     },
     container3: {
         flex: 1,
@@ -40,7 +38,6 @@ export default  {
         margin: 'auto',
         marginTop: '5%',
         marginBottom: '5%',
-        position: 'relative'
     }, container4: {
         flex: 1,
         display: 'flex',
@@ -54,7 +51,6 @@ export default  {
         marginTop: '5%',
         marginBottom: '5%',
         marginRight: '31%',
-        position: 'relative'
     }, container5: {
         flex: 1,
         display: 'flex',
@@ -67,7 +63,6 @@ export default  {
         margin: 'auto',
         marginTop: '5%',
         marginBottom: '5%',
-        position: 'relative'
     }, container6: {
         flex: 1,
         display: 'flex',
@@ -81,7 +76,6 @@ export default  {
         marginTop: '5%',
         marginBottom: '5%',
         marginLeft: '31%',
-        position: 'relative'
     }, container7: {
         flex: 1,
         display: 'flex',
@@ -94,7 +88,6 @@ export default  {
         margin: 'auto',
         marginTop: '5%',
         marginBottom: '5%',
-        position: 'relative'
     },
     sectionSmallCard: {
         background: '#ea9d0a',

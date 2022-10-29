@@ -23,7 +23,7 @@ export const Navbar = () => {
                     }}>Contact</Button>
                 </NavMenu>
             </Nav>
-            {openModal ? < ModalContact  closeModal={true} /> : null}
+            {openModal ? < ModalContact  closeModal={setOpenModal} /> : null}
         </>
     );
 }
