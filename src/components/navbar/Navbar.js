@@ -73,6 +73,22 @@ export const NavMenu = styled.div`
     display: none;
   }
 `
+export const Button = styled.button`
+        background: #2d2d2d;
+        color: rgb(255,255,255);
+        font-size: 1.5rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding: 1.5rem;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+        '&:hover': {
+            background: rgb(234,157,10);
+            color: #fff;
+        },
+`
 
 
 
