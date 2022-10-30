@@ -3,7 +3,7 @@ import {
     BodyModal,
     ButtonClose,
     FooterModal,
-    InputForm, 
+    InputForm,
     InputFormPost,
     LabelForm,
     ModalBackground,

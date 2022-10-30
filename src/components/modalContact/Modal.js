@@ -99,18 +99,19 @@ export const LabelForm = styled.label`
 `;
 
 export const InputForm = styled.input`
-  padding: 10px 10px;
-  border-style: solid ;
-  border-color:   rgb(45, 45, 45);
-  background: transparent;
-  color: #2d2d2d;
-  font:  1.5rem "Rubik", sans-serif;
-  margin-bottom: 20px;
-  width: 100%;
+ padding: 10px 10px;
+ border-style: solid;
+ border-color: rgba(45, 45, 45, 0.23);
+ border-radius: 4px;
+ background: transparent;
+ color: #2d2d2d;
+ font: 1.5rem "Rubik", sans-serif;
+ margin-bottom: 20px;
+ width: 100%;
 
-  &:focus {
-    outline: none;
-  }
+ &:focus {
+  outline: none;
+ }
 `;
 export const InputFormPost = styled(InputForm)`
     height: 150px;
