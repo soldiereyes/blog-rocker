@@ -1,0 +1,25 @@
+.Navbar{
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px black solid;
+    background-color: aqua;
+}
+
+
+.Navbar__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+.Navbar__container ul{
+    display: flex;
+    align-items: center;
+
+}
+.Navbar__container li {
+    padding: 10px;
+    list-style: none;
+}

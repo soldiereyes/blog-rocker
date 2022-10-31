@@ -1,0 +1,9 @@
+.AppContent{
+    
+    height: calc(100% - 70px);
+    width: 100%;
+    background-color: blueviolet;
+    position: relative;
+    overflow: auto;
+
+}
